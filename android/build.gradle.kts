@@ -19,10 +19,6 @@ subprojects {
     project.evaluationDependsOn(":app")
 }
 
-tasks.register<Delete>("clean") {
-    delete(rootProject.layout.buildDirectory)
-}
-
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
