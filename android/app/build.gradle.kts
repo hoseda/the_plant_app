@@ -6,9 +6,9 @@ plugins {
 
 android {
     namespace = "com.example.the_plant_app"
-    //compileSdk = flutter.compileSdkVersion
-    val compileSdkFromFlutterProp = (project.properties["flutter.compileSdkVersion"] as? String)?.toIntOrNull()
-    compileSdk = compileSdkFromFlutterProp ?: 33
+    compileSdk = 33
+    //val compileSdkFromFlutterProp = (project.properties["flutter.compileSdkVersion"] as? String)?.toIntOrNull()
+    //compileSdk = compileSdkFromFlutterProp ?: 33
     ndkVersion = flutter.ndkVersion
 
     compileOptions {
