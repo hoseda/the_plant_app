@@ -18,8 +18,3 @@ subprojects {
 subprojects {
     project.evaluationDependsOn(":app")
 }
-
-plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
-}
