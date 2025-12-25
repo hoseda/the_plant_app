@@ -7,7 +7,7 @@ plugins {
 android {
     namespace = "com.example.the_plant_app"
     compileSdk = 36
-    ndkVersion = "26.1.10909125"  // Explicit version
+    ndkVersion = "27.0.12077973"  // Explicit version
     
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
