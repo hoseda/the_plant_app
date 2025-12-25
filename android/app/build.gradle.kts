@@ -1,33 +1,31 @@
 plugins {
     id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    id("kotlin-android")
     id("dev.flutter.flutter-gradle-plugin")
 }
 
 android {
     namespace = "com.example.the_plant_app"
-    compileSdk = 33
-    //val compileSdkFromFlutterProp = (project.properties["flutter.compileSdkVersion"] as? String)?.toIntOrNull()
-    //compileSdk = compileSdkFromFlutterProp ?: 33
-    ndkVersion = flutter.ndkVersion
-
+    compileSdk = 34  // Explicit version
+    ndkVersion = "25.1.8937393"  // Explicit version
+    
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-
+    
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
+        jvmTarget = "17"
     }
-
+    
     defaultConfig {
         applicationId = "com.example.the_plant_app"
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutter.versionCode
-        versionName = flutter.versionName
+        minSdk = 21  // Explicit version
+        targetSdk = 34  // Explicit version
+        versionCode = 1
+        versionName = "1.0"
     }
-
+    
     buildTypes {
         release {
             signingConfig = signingConfigs.getByName("debug")
@@ -38,5 +36,3 @@ android {
 flutter {
     source = "../.."
 }
-
-
