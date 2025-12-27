@@ -86,16 +86,15 @@ class DetailPage extends ConsumerWidget {
 
             // تصویر گیاه
             Positioned(
-              top: 110,
-              left: 40,
+              top: 90,
+              left: 10,
               child: SizedBox(
-                height: 340,
-                width: 300,
-                child: Center(
-                  child: Image.asset(plant.imageURL, fit: BoxFit.contain),
-                ),
+                height: 300,
+                width: 270,
+                child: Image.asset(plant.imageURL, fit: BoxFit.contain),
               ),
             ),
+
 
             // اطلاعات سمت راست
             Positioned(
