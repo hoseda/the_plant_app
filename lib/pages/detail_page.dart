@@ -88,7 +88,13 @@ class DetailPage extends ConsumerWidget {
             Positioned(
               top: 110,
               left: 40,
-              child: SizedBox(height: 340, child: Image.asset(plant.imageURL)),
+              child: SizedBox(
+                height: 340,
+                width: 300,
+                child: Center(
+                  child: Image.asset(plant.imageURL, fit: BoxFit.contain),
+                ),
+              ),
             ),
 
             // اطلاعات سمت راست
