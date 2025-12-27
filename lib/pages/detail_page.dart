@@ -95,7 +95,6 @@ class DetailPage extends ConsumerWidget {
               ),
             ),
 
-
             // اطلاعات سمت راست
             Positioned(
               top: 110,
