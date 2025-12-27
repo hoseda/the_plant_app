@@ -22,6 +22,9 @@ jobs:
       - name: Flutter pub get
         run: flutter pub get
 
+      - name: Flutter generate icon
+        run: flutter pub run flutter_launcher_icon
+
       - name: Build release APK
         run: flutter build apk --release --android-skip-build-dependency-validation
 
